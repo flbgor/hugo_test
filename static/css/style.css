@@ -1,9 +1,9 @@
 :root {
-  --primary: #2aa8a1;
-  --primary-dark: #1f7f79;
+  --primary: #dc2626;
+  --primary-dark: #991b1b;
   --dark: #1f2937;
   --gray: #6b7280;
-  --bg-alt: #f4f9f9;
+  --bg-alt: #fef2f2;
   --white: #ffffff;
   --radius: 12px;
 }
@@ -113,7 +113,7 @@ h1, h2, h3 { margin-top: 0; }
   color: var(--primary-dark);
 }
 
-.btn-primary:hover { background: #eafaf9; }
+.btn-primary:hover { background: #fee2e2; }
 
 /* Sections */
 .section {
