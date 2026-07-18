@@ -26,7 +26,7 @@
 
   <!-- Hero -->
   {{ if or .Params.hero_claim .Params.hero_text }}
-  <section id="top" class="hero">
+  <section id="top" class="hero"{{ with .Params.hero_image }} style="background-image: linear-gradient(135deg, rgba(31,127,121,0.85), rgba(31,127,121,0.7)), url('{{ relURL . }}');"{{ end }}>
     <div class="container hero-inner">
       {{ with .Params.hero_claim }}<h1>{{ . }}</h1>{{ end }}
       {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
@@ -62,7 +62,13 @@
         {{ with .Params.about_title }}<h2>{{ . }}</h2>{{ end }}
         {{ .Content }}
       </div>
+      {{ with .Params.about_image }}
+      <div class="about-image about-image--photo">
+        <img src="{{ relURL . }}" alt="{{ $.Params.about_image_alt | default $.Params.about_title }}" loading="lazy">
+      </div>
+      {{ else }}
       <div class="about-image" aria-hidden="true">🏥</div>
+      {{ end }}
     </div>
   </section>
   {{ end }}
@@ -75,8 +81,15 @@
       <h2>{{ $team.Params.section_title | default $team.Title }}</h2>
       <div class="cards team-cards">
         {{ range .ByWeight }}
+        {{ $member := . }}
         <div class="card team-card">
+          {{ with .Params.image }}
+          <div class="avatar avatar-photo">
+            <img src="{{ relURL . }}" alt="{{ $member.Params.image_alt | default $member.Title }}" loading="lazy">
+          </div>
+          {{ else }}
           {{ with .Params.icon }}<div class="avatar">{{ . }}</div>{{ end }}
+          {{ end }}
           <h3>{{ .Title }}</h3>
           {{ with .Params.role }}<p class="role">{{ . }}</p>{{ end }}
         </div>

@@ -4,8 +4,12 @@ title = "Startseite"
 hero_claim = "Ihr Lächeln in besten Händen"
 hero_text = "Kompetente Zahnmedizin für die ganze Familie – einfühlsam, modern und schmerzarm."
 hero_cta = "Jetzt Termin vereinbaren"
+hero_image = "img/hero-praxis.jpg"
+hero_image_alt = "Zahnarzt bespricht Röntgenbild mit Patientin"
 
 about_title = "Über unsere Praxis"
+about_image = "img/ueber-uns-praxis.jpg"
+about_image_alt = "Moderne Behandlungsraum unserer Zahnarztpraxis"
 
 [oeffnungszeiten]
   title = "Öffnungszeiten"
