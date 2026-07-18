@@ -1,0 +1,10 @@
+baseURL = "https://www.zahnarzt-mustermann.de/"
+locale = "de-DE"
+title = "Zahnarztpraxis Dr. Mustermann"
+
+[params]
+  logoIcon = "🦷"
+
+[params.social]
+  facebook = "#"
+  instagram = "#"
