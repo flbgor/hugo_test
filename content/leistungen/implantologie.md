@@ -1,10 +1,16 @@
 +++
 title = "Implantologie"
-icon = "🔧"
-weight = 3
+icon = "🔩"
+weight = 10
 
 [build]
   render = "never"
 +++
 
-Hochwertiger Zahnersatz mit modernster Implantattechnik.
+Wir sind Ansprechpartner für Implantate in Bielefeld.
+
+Zahnimplantate werden zunehmend beliebter.
+
+Dabei handelt es sich um künstliche Zahnwurzeln, die in den Kieferknochen eingeschraubt werden.
+
+Die Implantate dienen als Träger für festsitzende Zahnkronen oder Brücken.

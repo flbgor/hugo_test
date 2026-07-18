@@ -1,10 +1,10 @@
-baseURL = "https://www.zahnarzt-mustermann.de/"
+baseURL = "https://www.zahnarztpraxis-bielefeld.de/"
 locale = "de-DE"
-title = "Zahnarztpraxis Dr. Mustermann"
+title = "Zahnarztpraxis Bielefeld"
 
 [params]
   logoIcon = "🦷"
 
 [params.social]
-  facebook = "#"
+  facebook = "https://www.facebook.com/zahnarztpraxis.bielefeld"
   instagram = "#"

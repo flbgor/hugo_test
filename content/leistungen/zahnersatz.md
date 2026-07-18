@@ -1,10 +1,12 @@
 +++
 title = "Zahnersatz"
-icon = "🦿"
-weight = 6
+icon = "🦷"
+weight = 1
 
 [build]
   render = "never"
 +++
 
-Kronen, Brücken und Prothesen, individuell angefertigt.
+In unserer Zahnarztpraxis bieten wir Ihnen umfangreiche Möglichkeiten für ästhetischen und funktionsfähigen Zahnersatz in Bielefeld.
+
+Wenn ein Zahn fehlt oder beschädigt ist, gibt es verschiedene Varianten zur Korrektur oder für den Zahnersatz.

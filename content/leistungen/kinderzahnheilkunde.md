@@ -7,4 +7,6 @@ weight = 4
   render = "never"
 +++
 
-Einfühlsame Behandlung speziell für unsere kleinen Patienten.
+Die kinderfreudliche Zahnarztpraxis in Bielefeld: Hier gehen Kinder angstfrei zum Zahnarzt Sie als Eltern legen mit Recht großen Wert darauf, dass Ihre Kinder bestmöglich versorgt werden.
+
+Das Team unserer Zahnarztpraxis in Bielefeld kümmert sich fachgerecht um alle Anliegen der Kinderzahnheilkunde.

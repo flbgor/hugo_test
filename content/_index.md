@@ -1,27 +1,27 @@
 +++
 title = "Startseite"
 
-hero_claim = "Ihr Lächeln in besten Händen"
-hero_text = "Kompetente Zahnmedizin für die ganze Familie – einfühlsam, modern und schmerzarm."
+hero_claim = "Ihr Zahnarzt in Bielefeld"
+hero_text = "Dr. Sven Kahlke und sein Team freuen sich auf Ihren Besuch in der Zahnarztpraxis Bielefeld."
 hero_cta = "Jetzt Termin vereinbaren"
 hero_image = "img/hero-praxis.jpg"
-hero_image_alt = "Zahnarzt bespricht Röntgenbild mit Patientin"
+hero_image_alt = "Zahnarztpraxis Dr. Sven Kahlke"
 
-about_title = "Über unsere Praxis"
+about_title = "Herzlich willkommen in der Zahnarztpraxis Bielefeld"
 about_image = "img/ueber-uns-praxis.jpg"
-about_image_alt = "Moderne Behandlungsraum unserer Zahnarztpraxis"
+about_image_alt = "Zahnarztpraxis in Bielefeld"
 
 [oeffnungszeiten]
   title = "Öffnungszeiten"
-  montag_freitag = "08:00 – 18:00 Uhr"
-  samstag = "09:00 – 12:00 Uhr (nach Vereinbarung)"
+  montag_freitag = "Mo, Di, Do: 08:00 – 18:00 Uhr | Mi, Fr: 08:00 – 13:00 Uhr"
+  samstag = "Sowie nach Vereinbarung"
   sonntag = "Geschlossen"
 
 [kontakt]
   title = "Kontakt"
-  adresse = "Musterstraße 12, 10115 Berlin"
-  telefon = "+49 30 123456"
-  email = "info@zahnarzt-mustermann.de"
+  adresse = "Deckertstraße 53, 33617 Bielefeld"
+  telefon = "+49 (0) 521 15943"
+  email = "info@zahnarztpraxis-bielefeld.de"
 
 [kontaktformular]
   title = "Termin anfragen"
@@ -29,11 +29,11 @@ about_image_alt = "Moderne Behandlungsraum unserer Zahnarztpraxis"
   button_text = "Anfrage senden"
 +++
 
-Willkommen in unserer Zahnarztpraxis. Wir kümmern uns um Ihre Zahngesundheit mit modernster Technik und viel Einfühlungsvermögen.
+Herzlich willkommen bei der Zahnarztpraxis Bielefeld. Möchten Sie einen Termin vereinbaren? Dann nutzen Sie einfach unser Kontaktformular oder rufen Sie uns an. Gerne informieren wir Sie über unsere modernen zahnmedizinischen Leistungen.
 
-Seit über 15 Jahren betreuen wir Patienten jeden Alters mit höchstem Anspruch an Qualität und Hygiene. Unser Team aus erfahrenen Zahnärzten und freundlichem Praxispersonal sorgt dafür, dass Sie sich bei uns rundum wohlfühlen.
+Wir bieten Ihnen die Möglichkeit, bereits bevor Sie zu uns in die Praxis kommen, online einen notwendigen Fragebogen (Anamnese) auszufüllen. Dies hilft uns und Ihnen, Wartezeiten zu minimieren.
 
-- Modernste medizinische Ausstattung
-- Individuelle Beratung und Behandlungsplanung
-- Barrierefreier Zugang
-- Kurze Wartezeiten durch Terminvergabe
+- **Vorsorgende und schonende Zahnheilkunde**
+- **Modernste medizinische Ausstattung**
+- **Individuelle Beratung und Behandlungsplanung**
+- **Kurze Wartezeiten durch strukturierte Terminvergabe**

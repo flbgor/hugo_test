@@ -1,10 +1,14 @@
 +++
-title = "Prophylaxe"
-icon = "🦷"
-weight = 1
+title = "Professionelle Zahnreinigung (Prophylaxe)"
+icon = "✨"
+weight = 2
 
 [build]
   render = "never"
 +++
 
-Professionelle Zahnreinigung und Vorsorge für gesunde Zähne ein Leben lang.
+Die tägliche Zahnpflege ist ein wichtiger Bestandteil der Mundhygiene.
+
+Noch mehr können Sie mit einer medizinischen Zahnreinigung (Prophylaxe) in unserer Praxis in Bielefeld tun.
+
+Unsere freundlichen, speziell geschulten Fachkräfte führen die medizinische Zahnreinigung durch und beraten Sie über weitere Vorsorgemaßnahmen für schöne und gesunde...
