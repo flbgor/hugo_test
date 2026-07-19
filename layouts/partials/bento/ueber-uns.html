@@ -1,11 +1,18 @@
 {{ if .Content }}
 <div id="ueber-uns" class="bento-box bento-about bento-span-4">
-  <div class="bento-card-header">
-    <div class="bento-icon">🏥</div>
-    {{ with .Params.about_title }}<h2>{{ . }}</h2>{{ end }}
+  {{ with .Params.about_image }}
+  <div class="bento-about-img-wrapper">
+    <img src="{{ relURL . }}" alt="{{ $.Params.about_image_alt | default $.Params.about_title }}" loading="lazy">
+    <div class="bento-about-badge">🏥 Moderne Praxis</div>
   </div>
-  <div class="bento-about-text">
-    {{ .Content }}
+  {{ end }}
+  <div class="bento-about-content">
+    <div class="bento-card-header">
+      {{ with .Params.about_title }}<h2>{{ . }}</h2>{{ end }}
+    </div>
+    <div class="bento-about-text">
+      {{ .Content }}
+    </div>
   </div>
 </div>
 {{ end }}

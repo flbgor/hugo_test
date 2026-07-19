@@ -1,4 +1,6 @@
 +++
+image = "img/service-parodontologie.jpg"
+badge = "Zahnfleisch"
 title = "Parodontologie"
 icon = "🏥"
 weight = 3

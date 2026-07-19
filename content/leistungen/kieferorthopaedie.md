@@ -1,4 +1,6 @@
 +++
+image = "img/service-kieferorthopaedie.jpg"
+badge = "Zahnkorrektur"
 title = "Kieferorthopädie"
 icon = "🔧"
 weight = 9

@@ -1,4 +1,6 @@
 +++
+image = "img/service-kinderzahnheilkunde.jpg"
+badge = "Sanft & Angstfrei"
 title = "Kinderzahnheilkunde"
 icon = "👶"
 weight = 4

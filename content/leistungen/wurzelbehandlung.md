@@ -1,4 +1,6 @@
 +++
+image = "img/service-wurzelbehandlung.jpg"
+badge = "Endodontie"
 title = "Wurzelbehandlung"
 icon = "⚡"
 weight = 7

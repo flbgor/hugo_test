@@ -1,8 +1,8 @@
 {{ if or .Params.hero_claim .Params.hero_text }}
-<div class="bento-box bento-hero bento-span-8">
+<div class="bento-box bento-hero bento-span-8" style="background-image: linear-gradient(135deg, rgba(153,27,27,0.88), rgba(153,27,27,0.75)), url('{{ relURL (.Params.hero_image | default "img/hero-praxis.jpg") }}');">
   <div class="bento-hero-overlay"></div>
   <div class="bento-hero-content">
-    <span class="bento-tag">Willkommen in Bielefeld</span>
+    <span class="bento-tag">✨ Zahnarztpraxis Bielefeld</span>
     {{ with .Params.hero_claim }}<h1>{{ . }}</h1>{{ end }}
     {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
     {{ with .Params.hero_cta }}<a href="#kontakt" class="btn btn-primary">{{ . }}</a>{{ end }}

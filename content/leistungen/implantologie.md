@@ -1,4 +1,6 @@
 +++
+image = "img/service-implantologie.jpg"
+badge = "Implantate"
 title = "Implantologie"
 icon = "🔩"
 weight = 10

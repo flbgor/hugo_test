@@ -1,4 +1,6 @@
 +++
+image = "img/service-bleaching.jpg"
+badge = "Weiße Zähne"
 title = "Bleaching"
 icon = "💎"
 weight = 5

@@ -1,4 +1,6 @@
 +++
+image = "img/service-zahnersatz.jpg"
+badge = "Ästhetik"
 title = "Zahnersatz"
 icon = "🦷"
 weight = 1

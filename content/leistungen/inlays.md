@@ -1,4 +1,6 @@
 +++
+image = "img/service-inlays.jpg"
+badge = "Präzision"
 title = "Inlays"
 icon = "🧱"
 weight = 6

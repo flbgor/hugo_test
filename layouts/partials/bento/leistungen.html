@@ -3,7 +3,7 @@
 <div id="leistungen" class="bento-section bento-span-12">
   <div class="bento-section-title">
     <h2>{{ $leistungen.Params.section_title | default $leistungen.Title }}</h2>
-    <p>Moderne Zahnmedizin für Ihr schönstes Lächeln</p>
+    <p>Kompetente Zahnmedizin & modernste Behandlungsverfahren</p>
   </div>
   <div class="bento-grid-sub">
     {{ range $index, $page := .ByWeight }}
@@ -14,12 +14,22 @@
       {{ $spanClass = "bento-span-6" }}
     {{ end }}
     <div class="bento-box bento-service-card {{ $spanClass }}">
-      <div class="bento-service-header">
-        {{ with .Params.icon }}<span class="bento-service-icon">{{ . }}</span>{{ end }}
-        <h3>{{ .Title }}</h3>
+      {{ with .Params.image }}
+      <div class="bento-card-media">
+        <img src="{{ relURL . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ with $.Params.badge }}
+        <span class="bento-card-badge">{{ . }}</span>
+        {{ end }}
       </div>
-      <div class="bento-service-body">
-        {{ .Content }}
+      {{ end }}
+      <div class="bento-service-content">
+        <div class="bento-service-header">
+          {{ with .Params.icon }}<span class="bento-service-icon">{{ . }}</span>{{ end }}
+          <h3>{{ .Title }}</h3>
+        </div>
+        <div class="bento-service-body">
+          {{ .Content }}
+        </div>
       </div>
     </div>
     {{ end }}

@@ -1,4 +1,6 @@
 +++
+image = "img/service-prophylaxe.jpg"
+badge = "Vorsorge"
 title = "Professionelle Zahnreinigung (Prophylaxe)"
 icon = "✨"
 weight = 2

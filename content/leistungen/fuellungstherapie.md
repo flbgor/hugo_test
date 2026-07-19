@@ -1,4 +1,6 @@
 +++
+image = "img/service-fuellungstherapie.jpg"
+badge = "Zahnerhalt"
 title = "Füllungstherapie"
 icon = "🧪"
 weight = 8
