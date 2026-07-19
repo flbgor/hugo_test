@@ -1,0 +1,29 @@
+{{ $team := .Site.GetPage "team" }}
+{{ if $team }}{{ with $team.Pages }}
+<div id="team" class="bento-section bento-span-12">
+  <div class="bento-section-title">
+    <h2>{{ $team.Params.section_title | default $team.Title }}</h2>
+    <p>Erfahrene Experten für Ihre Gesundheit</p>
+  </div>
+  <div class="bento-grid-sub">
+    {{ range .ByWeight }}
+    <div class="bento-box bento-team-card bento-span-6">
+      <div class="bento-team-inner">
+        {{ with .Params.image }}
+        <div class="bento-avatar bento-avatar-photo">
+          <img src="{{ relURL . }}" alt="{{ $.Title }}" loading="lazy">
+        </div>
+        {{ else }}
+        {{ with .Params.icon }}<div class="bento-avatar-icon">{{ . }}</div>{{ end }}
+        {{ end }}
+        <div class="bento-team-info">
+          <h3>{{ .Title }}</h3>
+          {{ with .Params.role }}<p class="bento-role">{{ . }}</p>{{ end }}
+          <div class="bento-team-desc">{{ .Content }}</div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}{{ end }}

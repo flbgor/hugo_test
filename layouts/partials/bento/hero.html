@@ -1,0 +1,11 @@
+{{ if or .Params.hero_claim .Params.hero_text }}
+<div class="bento-box bento-hero bento-span-8">
+  <div class="bento-hero-overlay"></div>
+  <div class="bento-hero-content">
+    <span class="bento-tag">Willkommen in Bielefeld</span>
+    {{ with .Params.hero_claim }}<h1>{{ . }}</h1>{{ end }}
+    {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
+    {{ with .Params.hero_cta }}<a href="#kontakt" class="btn btn-primary">{{ . }}</a>{{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,28 @@
+{{ $leistungen := .Site.GetPage "leistungen" }}
+{{ if $leistungen }}{{ with $leistungen.Pages }}
+<div id="leistungen" class="bento-section bento-span-12">
+  <div class="bento-section-title">
+    <h2>{{ $leistungen.Params.section_title | default $leistungen.Title }}</h2>
+    <p>Moderne Zahnmedizin für Ihr schönstes Lächeln</p>
+  </div>
+  <div class="bento-grid-sub">
+    {{ range $index, $page := .ByWeight }}
+    {{ $spanClass := "bento-span-4" }}
+    {{ if eq (mod $index 5) 0 }}
+      {{ $spanClass = "bento-span-6" }}
+    {{ else if eq (mod $index 5) 1 }}
+      {{ $spanClass = "bento-span-6" }}
+    {{ end }}
+    <div class="bento-box bento-service-card {{ $spanClass }}">
+      <div class="bento-service-header">
+        {{ with .Params.icon }}<span class="bento-service-icon">{{ . }}</span>{{ end }}
+        <h3>{{ .Title }}</h3>
+      </div>
+      <div class="bento-service-body">
+        {{ .Content }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}{{ end }}

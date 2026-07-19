@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top">{{ .Site.Params.logoIcon }} {{ .Site.Title }}</a>
+    <nav class="nav">
+      {{ if .Site.GetPage "leistungen" }}<a href="#leistungen">Leistungen</a>{{ end }}
+      {{ with .Params.about_title }}<a href="#ueber-uns">Über uns</a>{{ end }}
+      {{ if .Site.GetPage "team" }}<a href="#team">Team</a>{{ end }}
+      {{ if .Params.oeffnungszeiten }}<a href="#oeffnungszeiten">Öffnungszeiten</a>{{ end }}
+      {{ with .Params.kontaktformular.title }}<a href="#kontakt" class="nav-cta">{{ . }}</a>{{ end }}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+{{ if .Content }}
+<div id="ueber-uns" class="bento-box bento-about bento-span-4">
+  <div class="bento-card-header">
+    <div class="bento-icon">🏥</div>
+    {{ with .Params.about_title }}<h2>{{ . }}</h2>{{ end }}
+  </div>
+  <div class="bento-about-text">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

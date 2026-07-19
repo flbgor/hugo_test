@@ -1,0 +1,22 @@
+{{ with .Params.kontaktformular }}
+<div id="kontakt" class="bento-box bento-form-box bento-span-6">
+  <div class="bento-card-header">
+    <div class="bento-icon">📅</div>
+    <h2>{{ .title | default "Termin anfragen" }}</h2>
+  </div>
+  <form class="contact-form" action="{{ .action | default "#" }}" method="post">
+    <div class="form-row">
+      <label>Name
+        <input type="text" name="name" required placeholder="Ihr Name">
+      </label>
+      <label>E-Mail
+        <input type="email" name="email" required placeholder="ihre.email@beispiel.de">
+      </label>
+    </div>
+    <label>Nachricht
+      <textarea name="message" rows="4" required placeholder="Ihr Terminwunsch oder Anliegen..."></textarea>
+    </label>
+    <button type="submit" class="btn btn-primary">{{ .button_text | default "Anfrage senden" }}</button>
+  </form>
+</div>
+{{ end }}

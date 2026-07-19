@@ -1,0 +1,23 @@
+{{ if or .Params.oeffnungszeiten .Params.kontakt }}
+<div id="oeffnungszeiten" class="bento-box bento-hours bento-span-6">
+  {{ with .Params.oeffnungszeiten }}
+  <div class="bento-card-header">
+    <div class="bento-icon">🕒</div>
+    <h2>{{ .title | default "Öffnungszeiten" }}</h2>
+  </div>
+  <table class="hours-table">
+    {{ with .montag_freitag }}<tr><td>Montag – Freitag</td><td>{{ . }}</td></tr>{{ end }}
+    {{ with .samstag }}<tr><td>Samstag</td><td>{{ . }}</td></tr>{{ end }}
+    {{ with .sonntag }}<tr><td>Sonntag</td><td>{{ . }}</td></tr>{{ end }}
+  </table>
+  {{ end }}
+  {{ with .Params.kontakt }}
+  <div class="bento-contact-details">
+    <h3>{{ .title | default "Kontakt" }}</h3>
+    {{ with .adresse }}<p>📍 {{ . }}</p>{{ end }}
+    {{ with .telefon }}<p>📞 <a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
+    {{ with .email }}<p>✉️ <a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
